@@ -4,7 +4,7 @@ git log
 
 
 ## log of every commit with stats
-ls 
+
 git log --stat
 
 
@@ -70,7 +70,7 @@ git add file_name1 file_name2 file_name3
 git reset file_name
 
 
-# discard any changes either on working directory or staging area (be very careful when running this command)
+# discard any changes either(both) on working directory or staging area (be very careful when running this command)
 
 git reset --hard
 
@@ -97,3 +97,14 @@ git diff --staged
 # if you checkout old commit (say to find bug) and made changes to update it on latest version, then run following before adding files to staging area or before commiting
 
 git checkout master
+
+
+# display the list of brances for repository
+
+git branch
+
+
+# create a new branch from master
+
+git branch new_branch_name
+
