@@ -60,15 +60,35 @@ git status
 
 git add file_name
 
+or 
+
+git add file_name1 file_name2 file_name3
+
 
 # remove a file from staging area
+
 git reset file_name
 
 
+# discard any changes either on working directory or staging area (be very careful when running this command)
+
+git reset --hard
+
 
 # Specify commit message
+
 git commit
 
-or 
-(this is shortcut)
+or (this is shortcut)
+
 git commit -m "Commit Message"
+
+
+# if you want to compare the files from working directory and staging area (when there is no commit id)
+
+git diff
+
+
+# if you want to compare the files from staging area and Repository 
+
+git diff --staged
