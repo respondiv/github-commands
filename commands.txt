@@ -1,0 +1,74 @@
+## log of every commit ever made
+
+git log
+
+
+## log of every commit with stats
+ls 
+git log --stat
+
+
+## press 'q' to quit git log output screen
+
+
+## compares different versions of file
+
+git diff commit_id_1 commit_id_2
+
+
+## copy / clone the entire repository (initial ?)
+
+git clone url_of_repository
+
+
+## changes the settings in git to make it colourful (instead of black and white). The --global will apply the setting to all of the git projects
+
+git config --global color.ui auto
+
+
+## Switch branches / work / restore previous (any) versions of file
+
+git checkout commit_id
+
+
+## set sublime text as default editor: -n -> opens in new window; -w -> git waits for us to close sublime before trying to continue
+
+git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -n -w"
+
+
+##
+
+git config --global push.default upstream
+
+
+##
+
+git config --global merge.conflictstyle diff3
+
+
+## create git repository within a directory
+
+git init
+
+
+## see the status of the repository
+
+git status
+
+
+## Add a file to staging area
+
+git add file_name
+
+
+# remove a file from staging area
+git reset file_name
+
+
+
+# Specify commit message
+git commit
+
+or 
+(this is shortcut)
+git commit -m "Commit Message"
