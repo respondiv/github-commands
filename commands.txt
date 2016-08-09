@@ -75,7 +75,7 @@ git reset file_name
 git reset --hard
 
 
-# Specify commit message
+# commit the changes and specify commit message (normally do one commit per logical change)
 
 git commit
 
@@ -92,3 +92,8 @@ git diff
 # if you want to compare the files from staging area and Repository 
 
 git diff --staged
+
+
+# if you checkout old commit (say to find bug) and made changes to update it on latest version, then run following before adding files to staging area or before commiting
+
+git checkout master
