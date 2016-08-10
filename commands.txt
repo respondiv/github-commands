@@ -150,7 +150,7 @@ git merge branch1 branch2
 git merge --abort
 
 
-## comparing a commit to it's parent
+## comparing a commit to it's parent without knowing parent id
 
 git show commit_id
 
