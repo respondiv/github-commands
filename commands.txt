@@ -16,11 +16,6 @@ git log --stat
 git diff commit_id_1 commit_id_2
 
 
-## copy / clone the entire repository (initial ?)
-
-git clone url_of_repository
-
-
 ## changes the settings in git to make it colourful (instead of black and white). The --global will apply the setting to all of the git projects
 
 git config --global color.ui auto
@@ -54,6 +49,11 @@ git config --global core.autocrlf input
 ## Global settings for line endings: Configure Git on Windows to properly handle line endings
 
 git config --global core.autocrlf true
+
+
+## Caching your github password so that you don't need to type it again and again when doing commit
+
+git config --global credential.helper wincred
 
 
 ## create git repository within a directory
@@ -158,4 +158,45 @@ git show commit_id
 ## delete a unnecessary git branch(say after merging)
 
 git branch -d branch_name
+
+
+## view all the remote repository
+
+git remote
+
+
+## add a remote repository (e.g from github), if you only have 1 remote name it origin
+
+git remote add remote_name url_for_git_with_https
+
+
+## verify the added remote
+
+git remote -v
+
+
+## send (push) the chages to the repository (remote)
+
+git push -u remote_name branch_name_you_want_to_push
+
+e.g git push -u origin master
+
+
+## receive (pull) the changes from github (remote) to local computer
+
+git pull remote_name branch_name_you_want_to_push
+
+e.g git pull origin master
+
+
+## Forking a Repository: Use github via browser and click Fork button
+
+
+## copy / clone the entire repository from remote (initial). Cloning a repository automatically create remote for push and pull
+
+git clone url_of_repository
+
+
+
+
 
