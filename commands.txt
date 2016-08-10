@@ -158,3 +158,8 @@ git show commit_id
 ## delete a unnecessary git branch(say after merging)
 
 git branch -d branch_name
+
+
+## add tesr
+
+git test
