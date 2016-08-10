@@ -46,6 +46,16 @@ git config --global push.default upstream
 git config --global merge.conflictstyle diff3
 
 
+## Global settings for line endings:  Configure Git on OS X or Linux to properly handle line endings
+
+git config --global core.autocrlf input
+
+
+## Global settings for line endings: Configure Git on Windows to properly handle line endings
+
+git config --global core.autocrlf true
+
+
 ## create git repository within a directory
 
 git init
@@ -112,3 +122,39 @@ git branch new_branch_name
 ## view the commit history between different branched in one place (e.g master and branch1)
 
 git log --graph --oneline master branch1
+
+
+## If you are checking out a commit id (say to pinpoint a bug) and want to crate a branch from that commit id so that your work won't be lost, use following (it's a combination of using git checkout and git branch command)
+
+git checkout -b new_branch_name
+
+
+## run git garbage collection (delete all unused / unreachable commits)
+
+git gc
+
+
+## merge 2 or more branch. Always checkout the branch that you want other to merge and point. (say you are merging a master and branch1 and want branch1 to merge and point to master then do 'git checkout master' before running the merge command, if you are merging and pointing master to branch1 then do 'git checkout branch1' before running the merge command)
+
+## git merge will also include the currently checked-out branch in the merged version. So if you have branch1 checked out, and you run git merge branch2 branch3, the merged version will combine branch1 as well as branch2 and branch3. For this reason, you should always checkout one of the two (or more) branches you’re planning on merging before doing the merge. Which one you should check out depends on which branch label you want to point to the new commit.
+
+git merger master branch1
+
+or 
+
+git merge branch1 branch2
+
+
+## if there is merge error and want to abort the merge use git merge --abort and then use git log and or git diff find the issue, fix it and redo the merge process
+
+git merge --abort
+
+
+## comparing a commit to it's parent
+
+git show commit_id
+
+
+## delete a unnecessary git branch(say after merging)
+
+git branch -d branch_name
