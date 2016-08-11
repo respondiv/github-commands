@@ -197,6 +197,10 @@ e.g git pull origin master
 git clone url_of_repository
 
 
+## Git Fetch will only fetch the code from repository but doesn't merge it to local copy. This will help you to see the difference in coe (conflicts) by doing git log and git diff
 
+git fetch remote_name
 
+e.g.
 
+git fetch origin
