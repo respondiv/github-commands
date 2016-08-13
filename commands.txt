@@ -56,6 +56,11 @@ git config --global core.autocrlf true
 git config --global credential.helper wincred
 
 
+## Run this command to increase window's path length limit. This will help when you see an error in cloning the repository
+
+git config --system core.longpaths true
+
+
 ## create git repository within a directory
 
 git init
@@ -169,6 +174,10 @@ git remote
 
 git remote add remote_name url_for_git_with_https
 
+e.g
+
+git remote add origin 
+
 
 ## verify the added remote
 
@@ -186,7 +195,9 @@ e.g git push -u origin master
 
 git pull remote_name branch_name_you_want_to_push
 
-e.g git pull origin master
+e.g 
+
+git pull origin https://github.com/respondiv/github-commands.git
 
 
 ## Forking a Repository: Use github via browser and click Fork button
@@ -204,3 +215,9 @@ git fetch remote_name
 e.g.
 
 git fetch origin
+
+
+Note: git pull origin master = git fetch origin | git merge master origin/master
+
+
+##
