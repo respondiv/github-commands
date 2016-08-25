@@ -68,7 +68,7 @@ Move the `git-completion.bash` from the download folder to home directory. Note 
 
 Move the `git-prompt.sh` from the download folder to home directory. Note when you doing save as it will rename the file to `git-prompt.sh.txt`
 
-`mv Downloads/git-prompt.sh.txt git-prompt.sh.bash`
+`mv Downloads/git-prompt.sh.txt git-prompt.sh`
 
 Download (save) the `bash_profile` file from `git-files' to the download folder as bash_profile.txt and run following commands
 
