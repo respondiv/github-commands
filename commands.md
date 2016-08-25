@@ -31,7 +31,11 @@ or for multiple filename
 
 or for all file
 
-`git add *`  or  `git add .`
+`git add *`  
+
+or  
+
+`git add .`
 
 
 ###### remove a file from staging area
