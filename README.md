@@ -34,7 +34,7 @@
 `git config --global credential.helper wincred`
 
 
-#### Run this command to increase window's path length limit. This will help when you see an error in cloning the repository
+#### Run this command to increase window's path length limit. This will help when you see an error in cloning the repository. Make sure you Run git bash as admin before running this command
 
 `git config --system core.longpaths true`
 
