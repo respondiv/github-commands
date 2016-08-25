@@ -58,19 +58,19 @@ This file can also be downloaded from https://raw.githubusercontent.com/git/git/
 ###### Open git bash and run following commands
 
 
-Go to home directory
+###### Go to home directory
 
 `cd ~`
 
-Move the `git-completion.bash` from the download folder to home directory. Note when you doing save as it will rename the file to `git-completion.bash.txt`
+###### Move the `git-completion.bash` from the download folder to home directory. Note when you doing save as it will rename the file to `git-completion.bash.txt`
 
 `mv Downloads/git-completion.bash.txt git-completion.bash`
 
-Move the `git-prompt.sh` from the download folder to home directory. Note when you doing save as it will rename the file to `git-prompt.sh.txt`
+###### Move the `git-prompt.sh` from the download folder to home directory. Note when you doing save as it will rename the file to `git-prompt.sh.txt`
 
 `mv Downloads/git-prompt.sh.txt git-prompt.sh`
 
-Download (save) the `bash_profile` file from `git-files' to the download folder as bash_profile.txt and run following commands
+###### Download (save) the `bash_profile` file from `git-files' to the download folder as bash_profile.txt and run following commands
 
 `mv Downloads/bash_profile.txt .bash_profile`
 
