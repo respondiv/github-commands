@@ -36,10 +36,43 @@
 
 #### Run this command to increase window's path length limit. This will help when you see an error in cloning the repository
 
-git config --system core.longpaths true
+`git config --system core.longpaths true`
 
 
 
+**Download the files from git-files directory and run following commands**
+
+```
+Note: 
+
+git-completion.bash ->  This enables 'Tab Completion' 
+This file can also be downloaded from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash . All you need to do is save as.
+
+git-prompt.sh -> enable git features in prompt (customize git prompt)
+This file can also be downloaded from https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh .All you need to do is Save as.
 
 
+```
 
+
+###### Open git bash and run following commands
+
+
+Go to home directory
+
+`cd ~`
+
+Move the `git-completion.bash` from the download folder to home directory. Note when you doing save as it will rename the file to `git-completion.bash.txt`
+
+`mv Downloads/git-completion.bash.txt git-completion.bash`
+
+Move the `git-prompt.sh` from the download folder to home directory. Note when you doing save as it will rename the file to `git-prompt.sh.txt`
+
+`mv Downloads/git-prompt.sh.txt git-prompt.sh.bash`
+
+Download (save) the `bash_profile` file from `git-files' to the download folder as bash_profile.txt and run following commands
+
+`mv Downloads/bash_profile.txt .bash_profile`
+
+
+**Open .bash_profile file in text editor. On the last line, if needed, update the location of the text editor (like sublime text)**
