@@ -132,9 +132,14 @@ or
 `git show commit_id`
 
 
-###### delete a unnecessary git branch(say after merging)
+###### delete a unnecessary git local branch(say after merging)
 
 `git branch -d branch_name`
+
+
+###### delete a unnecessary git remote branch(say after merging)
+
+`git push origin --delete branch_name`
 
 
 ###### view all the remote repository
