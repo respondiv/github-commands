@@ -72,15 +72,6 @@ or (this is shortcut)
 `git diff commit_id_1 commit_id_2`
 
 
-###### Switch branches / work / restore previous (any) versions of file
-
-`git checkout commit_id`
-
-or
-
-`git checkout branch-name`
-
-
 ###### display the list of brances for repository
 
 `git branch`
@@ -89,6 +80,15 @@ or
 ###### create a new branch from master
 
 `git branch new_branch_name`
+
+
+###### Switch branches / work / restore previous (any) versions of file
+
+`git checkout commit_id`
+
+or
+
+`git checkout branch-name`
 
 
 ###### view the commit history between different branched in one place (e.g master and branch1)
